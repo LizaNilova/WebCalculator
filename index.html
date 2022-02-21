@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <meta name="description" content="race00. Calculator">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="main_background">
+
+        <h1>Calculator</h1>
+
+        <div class="top">
+            <input type="text" id="area1">
+            <input type="text" id="area2" value="0">
+        </div>
+
+        <div id="button_box" class="parent">
+            <div class="div1">
+                <input type="button" value="C" id="clear" onclick="cle()">
+            </div>
+            <div class="div2">
+                <input type="button" value="←" id="de" onclick="del()" />
+            </div>
+            <div class="div3">
+                <input type="button" value="%" id="percent" onclick="fun('percent')" />
+                <input type="button" value="X&sup2;" id="sqrt" onclick="sqrt_btn('degree')" />
+            </div>
+            <div class="div4">
+                <input type="button" value="+/-" id="min_plus" onclick="result2()" />
+            </div>
+            <div class="div5">
+                <input type="button" value="&Sqrt;X" id="sqrt" onclick="sqrt_btn('sqrt')" />
+            </div>
+            <div class="div6">
+                <input type="button" value="X!" id="factorial" onclick="factorial()" />
+                <input type="button" value="÷" id="division" onclick="fun('division')" />
+            </div>
+            <div class="div7">
+                <input type="button" value="7" id="d7" onclick="fun('d7')" />
+            </div>
+            <div class="div8">
+                <input type="button" value="8" id="d8" onclick="fun('d8')" />
+            </div>
+            <div class="div9">
+                <input type="button" value="9" id="d9" onclick="fun('d9')" />
+                <input type="button" value="*" id="multi" onclick="fun('multi')" />
+            </div>
+            <div class="div10">
+                <input type="button" value="4" id="d4" onclick="fun('d4')" />
+            </div>
+            <div class="div11">
+                <input type="button" value="5" id="d5" onclick="fun('d5')" />
+            </div>
+            <div class="div12">
+                <input type="button" value="6" id="d6" onclick="fun('d6')" />
+                <input type="button" value="-" id="subtraction" onclick="fun('subtraction')" />
+            </div>
+            <div class="div13">
+                <input type="button" value="1" id="d1" onclick="fun('d1')" />
+            </div>
+            <div class="div14">
+                <input type="button" value="2" id="d2" onclick="fun('d2')" />
+            </div>
+            <div class="div15">
+                <input type="button" value="3" id="d3" onclick="fun('d3')" />
+                <input type="button" value="+" id="addition" onclick="fun('addition')" />
+            </div>
+            <div class="div16">
+                <input type="button" value="0" id="d0" onclick="fun('d0')" />
+            </div>
+            <div class="div17">
+                <input type="button" value="." id="float" onclick="fun('float')" />
+            </div>
+            <div class="div18">
+                <input type="button" value="=" id="equals" onclick="result('equals')" />
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
